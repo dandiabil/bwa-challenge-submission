@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/styles.css">
+  <!-- <link rel="stylesheet" href="/bootstrap/css/bootstrap.css"> -->
+  <!-- <script type="text/javascript" src="/bootstrap/js/bootstrap.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <title>Resto | Find Five Star Restaurant Near You</title>
+</head>
+
+<body>
+  <main>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand">
+      <ul class="navbar-nav navbar__links">
+        <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Category
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">About us</a></li>
+      </ul>
+      <figure class="navbar__logo">
+        <img src="/styles/icons/web-logo.svg" alt="resto-icon">
+      </figure>
+      <div class="navbar__form">
+        <div class="form__search">
+          <img src="/styles/icons/search-icon.svg" alt="search-icon">
+          <input class="form-control" type="text" placeholder="Search your favorite food"
+            aria-label="Search your favorite food">
+        </div>
+        <button type="button" class="btn btn__login">Log In</button>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__inner">
+        <div class="hero__item">
+          <img src="/styles/images/HeroImage1.png" class="hero__image" alt="Hero-image">
+        </div>
+        <div class="hero__item">
+          <img src="/styles/images/HeroImage2.png" class="hero__image" alt="Hero-image">
+        </div>
+      </div>
+      <div class="hero__description detail__card">
+        <div class="detail__rating">
+          <img src="/styles/icons/star-icon.svg" alt="star-icon">
+          <img src="/styles/icons/star-icon.svg" alt="star-icon">
+          <img src="/styles/icons/star-icon.svg" alt="star-icon">
+          <img src="/styles/icons/star-icon.svg" alt="star-icon">
+          <img src="/styles/icons/star-icon.svg" alt="star-icon">
+          <p class="rating">5.0</p>
+          <p class="votes">(5.2K+)</p>
+        </div>
+        <h1>Padang Restaurant</h1>
+        <h2>IDR 49.999 - IDR 560.000</h2>
+        <div class="detail__location">
+          <img src="/styles/icons/location-icon.svg" alt="location-icon">
+          <p>Padang, Indonesia</p>
+        </div>
+        <button type="button" class="btn btn__primary reservation">Make Reservation <img
+            src="/styles/icons/path-icon.svg" alt="path-icon"></button>
+        <div class="description__info">
+          <img src="/styles/icons/info-icon.svg" alt="info-icon">
+          <p>No extra cost</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefit -->
+    <section class="benefit">
+      <header class="benefit__header header">
+        <h2>Special Benefit For You</h2>
+        <h1>Why Should Choose Us?</h1>
+      </header>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="card">
+            <figure>
+              <img src="/styles/icons/discount-icon.svg" class="card-img-top card__image" alt="...">
+            </figure>
+            <div class="card-body">
+              <h5 class="card-title">Extra Discounts</h5>
+              <p class="card-text">Get your special discount by using our reservation</p>
+            </div>
+
+            <div class="card-footer">
+              <a href="#" class="btn btn__details">View Details <img src="/styles/icons/path-icon.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <figure>
+              <img src="/styles/icons/eat-icon.svg" class="card-img-top card__image" alt="...">
+            </figure>
+            <div class="card-body">
+              <h5 class="card-title">Come and Eat</h5>
+              <p class="card-text">Get your own table quickly & without waiting in line</p>
+            </div>
+
+            <div class="card-footer">
+              <a href="#" class="btn btn__details">View Details <img src="/styles/icons/path-icon.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <figure>
+              <img src="/styles/icons/fee-icon.svg" class="card-img-top card__image" alt="...">
+            </figure>
+            <div class="card-body">
+              <h5 class="card-title">No Extra Fee</h5>
+              <p class="card-text">Get tax free if you want to order food and make a reservation</p>
+            </div>
+
+            <div class="card-footer">
+              <a href="#" class="btn btn__details">View Details <img src="/styles/icons/path-icon.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <figure>
+              <img src="/styles/icons/clean-icon.svg" class="card-img-top card__image" alt="...">
+            </figure>
+            <div class="card-body">
+              <h5 class="card-title">Guaranteed Cleanliness</h5>
+              <p class="card-text">We ensure the cleanliness of the place as well as the food</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn__details">View Details <img src="/styles/icons/path-icon.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Restaurant -->
+    <section class="featured">
+      <div>
+        <header class="featured__header header">
+          <h2>Top 3 Featured Restaurant</h2>
+          <h1>Most Popular Restaurants</h1>
+          <p>The best restaurant in our opinion is how much customers like it in terms of place, price, comfort and of
+            course the taste of
+            the food itself.</p>
+          <button type="button" class="btn btn__primary view-restaurant">View All Restaurant <img
+              src="/styles/icons/path-icon.svg" alt="path-icon"></button>
+        </header>
+      </div>
+      <div class="featured__restaurants">
+        <div class="restaurant__container preview">
+          <img src="/styles/images/FeaturedImage1.png" class="restaurant__image" alt="restaurant1">
+          <div class="restaurant__detail detail__card">
+            <div class="restaurant__inner__detail">
+              <div class="detail__rating">
+                <img src="/styles/icons/star-icon.svg" alt="star-icon">
+                <p class="rating">5.0</p>
+                <p class="votes">(7.6K+)</p>
+              </div>
+              <h1>Bind Balorang</h1>
+              <div class="detail__location">
+                <img src="/styles/icons/location-icon.svg" alt="location-icon">
+                <p>Jakarta, Indonesia</p>
+              </div>
+            </div>
+            <button type="button" class="btn btn__primary detail"><img src="/styles/icons/arrow-right-icon.svg"
+                alt="arrow-icon"></button>
+          </div>
+        </div>
+        <div class="restaurant__container">
+          <img src="/styles/images/FeaturedImage2.png" class="restaurant__image" alt="restaurant2">
+        </div>
+        <div class="restaurant__container">
+          <img src="/styles/images/FeaturedImage3.png" class="restaurant__image" alt="restaurant3">
+        </div>
+      </div>
+    </section>
+
+    <!-- Restaurant Near You -->
+    <section class="restaurants">
+      <header>
+        <div class="header">
+          <h2>Top 3 Featured Restaurant</h2>
+          <h1>Most Popular Restaurants</h1>
+        </div>
+        <div class="restaurants__form">
+          <div class="form__search">
+            <img src="/styles/icons/location-icon.svg" alt="location-icon">
+            <select class="form-select" type="text" placeholder="Search your favorite food"
+              aria-label="Search your favorite food">
+              <option selected>Jakarta, Indonesia</option>
+              <option value="1">Bandung, Indonesia</option>
+              <option value="2">Sunda, Indonesia</option>
+              <option value="3">Bali, Indonesia</option>
+            </select>
+          </div>
+        </div>
+      </header>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="restaurant__container preview">
+            <img src="/styles/images/RestaurantImage1.png" class="restaurant__image" alt="restaurant1">
+            <div class="restaurant__detail detail__card">
+              <div class="restaurant__inner__detail">
+                <div class="detail__rating">
+                  <img src="/styles/icons/star-icon.svg" alt="star-icon">
+                  <p class="rating">5.0</p>
+                  <p class="votes">(6.6K+)</p>
+                </div>
+                <h1>Batavia Restaurant</h1>
+                <h2>IDR 29.000 - IDR 259.999</h2>
+              </div>
+              <button type="button" class="btn btn__primary detail"><img src="/styles/icons/arrow-right-icon.svg"
+                  alt="arrow-icon"></button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="restaurant__container preview">
+            <img src="/styles/images/RestaurantImage2.png" class="restaurant__image" alt="restaurant1">
+            <div class="restaurant__detail detail__card">
+              <div class="restaurant__inner__detail">
+                <div class="detail__rating">
+                  <img src="/styles/icons/star-icon.svg" alt="star-icon">
+                  <p class="rating">5.0</p>
+                  <p class="votes">(3.6K+)</p>
+                </div>
+                <h1>Split Ascent Restaurant</h1>
+                <h2>IDR 49.999 - IDR 560.000</h2>
+              </div>
+              <button type="button" class="btn btn__primary detail"><img src="/styles/icons/arrow-right-icon.svg"
+                  alt="arrow-icon"></button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="restaurant__container preview">
+            <img src="/styles/images/RestaurantImage3.png" class="restaurant__image" alt="restaurant1">
+            <div class="restaurant__detail detail__card">
+              <div class="restaurant__inner__detail">
+                <div class="detail__rating">
+                  <img src="/styles/icons/star-icon.svg" alt="star-icon">
+                  <p class="rating">5.0</p>
+                  <p class="votes">(11K+)</p>
+                </div>
+                <h1>Daza Fracture Restaurant</h1>
+                <h2>IDR 29.999 - IDR 560.000</h2>
+              </div>
+              <button type="button" class="btn btn__primary detail"><img src="/styles/icons/arrow-right-icon.svg"
+                  alt="arrow-icon"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="btn__wrapper">
+        <button type="button" class="btn btn__primary view-restaurant">View All Restaurant <img
+            src="/styles/icons/path-icon.svg" alt="path-icon"></button>
+      </div>
+    </section>
+
+    <!-- Chefs List -->
+    <section class="chef">
+      <div class="chef__picture">
+        <img src="/styles/images/PersonPicture.png" alt="chef-picture">
+        <div class="chef__experience">
+          <figure>
+            <img src="/styles/icons/shield-icon.svg" alt="shield-icon">
+          </figure>
+          <h2>12 Years</h2>
+          <p>Experience</p>
+        </div>
+        <div class="chef__restaurant">
+          <img src="/styles/images/FeaturedImage2.png" alt="thumbnail" class="place__image">
+          <div class="chef__detail">
+            <p>Chef at restaurant:</p>
+            <h3>Pearl Dolphin</h3>
+            <button class="btn btn__profile">View Details <img src="/styles/icons/path-icon.svg"
+                alt="path-icon"></button>
+          </div>
+        </div>
+      </div>
+      <div class="chef__list">
+        <header class="header">
+          <h2>Top 4 Expert Chefs</h2>
+          <h1>Expert Chefs in Fuddy</h1>
+        </header>
+        <div class="list">
+          <div class="restaurant__detail detail__card active">
+            <div class="restaurant__inner__detail">
+              <p class="food">PIZZA</p>
+              <h1>Phoenix Satcheup</h1>
+              <div class="detail__location">
+                <img src="/styles/icons/location-icon.svg" alt="location-icon">
+                <p>Jakarta, Indonesia</p>
+              </div>
+            </div>
+            <button type="button" class="btn btn__profile">Profile Details <img src="/styles/icons/path-icon.svg"
+                alt="path-icon"></button>
+          </div>
+          <div class="restaurant__detail detail__card">
+            <div class="restaurant__inner__detail">
+              <p class="food">VEGAN</p>
+              <h1>Udin Fantom</h1>
+              <div class="detail__location">
+                <img src="/styles/icons/location-icon.svg" alt="location-icon">
+                <p>Bandung, Indonesia</p>
+              </div>
+            </div>
+            <button type="button" class="btn btn__profile">Profile Details <img src="/styles/icons/path-icon.svg"
+                alt="path-icon"></button>
+          </div>
+          <div class="restaurant__detail detail__card">
+            <div class="restaurant__inner__detail">
+              <p class="food">ROAST CHICKEN</p>
+              <h1>Asep Vandal</h1>
+              <div class="detail__location">
+                <img src="/styles/icons/location-icon.svg" alt="location-icon">
+                <p>Sunda, Indonesia</p>
+              </div>
+            </div>
+            <button type="button" class="btn btn__profile">Profile Details <img src="/styles/icons/path-icon.svg"
+                alt="path-icon"></button>
+          </div>
+          <div class="restaurant__detail detail__card">
+            <div class="restaurant__inner__detail">
+              <p class="food">BEEF STEAK</p>
+              <h1>I Made Invoker</h1>
+              <div class="detail__location">
+                <img src="/styles/icons/location-icon.svg" alt="location-icon">
+                <p>Bali, Indonesia</p>
+              </div>
+            </div>
+            <button type="button" class="btn btn__profile">Profile Details <img src="/styles/icons/path-icon.svg"
+                alt="path-icon"></button>
+          </div>
+        </div>
+        <button type="button" class="btn btn__primary view-chef">View All Chef <img src="/styles/icons/path-icon.svg"
+            alt="path-icon"></button>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

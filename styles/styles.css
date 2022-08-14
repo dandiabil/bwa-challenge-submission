@@ -1,0 +1,565 @@
+@import url("/styles/fonts/Poppins/stylesheet.css");
+
+body {
+  font-family: "poppinsregular", sans-serif;
+  box-sizing: border-box;
+  background: #FAFAFA;
+  overflow-x: hidden;
+}
+
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* GLOBAL */
+.btn__primary{
+    background: #FDC886;
+    font-family: 'poppinssemibold', sans-serif;
+    border-radius: 12px;
+    height: 56px;
+    transition: .15s;
+}
+
+.btn__primary:hover{
+  background: #f7b464;
+}
+
+.detail__card{
+  border-radius: 24px;
+  padding: 24px;
+}
+
+.detail__card h1{
+  font-size: 22px;
+  font-family: 'poppinssemibold', sans-serif;
+  margin-bottom: 4px;
+}
+
+.detail__card h2{
+  font-size: 18px;
+  font-family: 'poppinssemibold', sans-serif;
+  color: #656565;
+  margin-bottom: 4px;
+}
+
+.detail__card .detail__location{
+  display: inline-flex;
+  margin-bottom: 34px;
+  gap: 6px;
+  align-items: center;
+}
+
+.detail__card .detail__location p{
+  margin: 0;
+  margin-top: 3px;
+  color: #656565;
+}
+
+.detail__card .detail__location img{
+  width: 24px;
+  height: 24px;
+}
+
+.detail__card .detail__rating{
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 4px;
+}
+
+.detail__card .detail__rating p{
+  margin: 0;
+}
+
+.detail__card .detail__rating img{
+  margin-right: 2px;
+}
+
+.detail__card .detail__rating .rating{
+  color: #FFB800;
+  font-family: 'poppinssemibold', sans-serif;
+  font-size: 18px;
+  margin-right: 4px;
+}
+
+.detail__card .detail__rating .votes{
+  color: #656565;
+}
+
+.header h1{
+  font-family: 'poppinssemibold', sans-serif;
+  font-size: 28px;
+}
+
+.header h2{
+  font-family: 'poppinssemibold', sans-serif;
+  font-size: 16px;
+  color: #5A4FCF;
+  margin-bottom: 6px;
+}
+
+.restaurant__image{
+  height: 100%;
+  width: 100%;
+  border-radius: 24px;
+  object-fit: cover;
+  object-position: center right;
+}
+
+.restaurant__detail{
+  width: 352px;
+  height: 131px;
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FFFF;
+}
+
+.restaurant__detail .detail__location{
+  margin-bottom: 0;
+}
+
+.restaurant__detail .detail{
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+}
+
+.view-restaurant{
+  width: 238px;
+}
+
+/* NAVBAR */
+.navbar{
+  width: 1320px;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-columns: 378px 1fr 446px;
+  font-family: 'poppinsmedium', sans-serif;
+  padding: 60px 0;
+}
+
+.navbar__links{
+  gap: 30px;
+}
+
+.navbar__links .nav-item .nav-link {
+  padding: 4px 0;
+}
+
+.navbar__links .active{
+  border-bottom: 3px solid #5A4FCF;
+}
+
+.navbar__form {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar__form .form__search{
+  position: relative;
+  border-radius: 12px;
+}
+
+.navbar__form .form__search img{
+  position: absolute;
+  top: 16px;
+  left: 28px;
+  width: 24px;
+  height: 24px;
+}
+
+.navbar__form .form-control {
+  outline: none;
+  border: none;
+  padding: 16px 56px 16px 62px;
+  width: 322px;
+}
+
+.navbar__form .btn__login {
+  background: rgba(90, 79, 207, 0.1);
+  color: #5A4FCF;
+  font-family: 'poppinssemibold', sans-serif;
+  width: 104px;
+  border-radius: 12px;
+}
+
+.navbar__logo{
+  text-align: center;
+  margin: 0;
+}
+
+.navbar__logo{
+  text-align: center;
+  margin: 0;
+}
+
+.navbar__logo img{
+  width: 118px;
+  height: 38px;
+}
+
+/* HERO */
+.hero{
+  width: 1320px;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 60px;
+}
+
+.hero__inner{
+  display: flex;
+  gap: 40px;
+  padding-left: 80px;
+}
+
+.hero__item .hero__image{
+  border-radius: 24px;
+  height: 564px;
+  width: 1128px;
+  object-fit: cover;
+  object-position: 50% 60%;
+}
+
+.hero__description{
+  background-color: #FFFF;
+  width: 390px;
+  height: 297px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hero .reservation{
+  width: 226px;
+  margin-bottom: 12px;
+}
+
+.hero .description__info{
+  display: flex;
+  gap: 8px;
+}
+
+.hero .description__info p{
+  margin: 0;
+  margin-top: 3px;
+}
+
+/* BENEFIT */
+.benefit{
+  width: 1320px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.benefit__header{
+  text-align: center;
+  margin-bottom: 41px;
+}
+
+.benefit .card{
+  border: none;
+  text-align: center;
+  padding-top: 24px;
+  border-radius: 24px;
+  height: 347px;
+}
+
+.benefit figure{
+  background-color: rgba(253, 200, 134, 0.15);
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 999px;
+  margin-bottom: 24px;
+}
+
+.benefit .card .card-body{
+  width: 267px;
+  margin: 0 auto;
+}
+
+.benefit .card .card-title{
+  font-family: 'poppinssemibold', sans-serif;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.benefit .card .card-text{
+  color: #656565;
+}
+
+.btn{
+  border: none;
+}
+
+.benefit .card .card-footer{
+  background: #FFFF;
+  border-radius: 12px 12px 24px 24px;
+  border: none;
+  height: 72px;
+  transition: 0.15s ease-in-out;
+}
+
+.benefit .card .card-footer:hover{
+  background: #FDC886;
+}
+
+.benefit .card .card-footer .btn__details{
+  font-family: 'poppinssemibold', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/* FEATURED RESTAURANT */
+.featured{
+  width: 1320px;
+  margin: 0 auto;
+  padding: 60px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 85px;
+  align-items: center;
+}
+
+.featured__header{
+  width: 367px;
+}
+
+.featured__header h1{
+  margin-bottom: 20px;
+}
+
+.featured__header p{
+  color: #656565;
+  margin-bottom: 56px;
+}
+
+.featured__restaurants{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.featured__restaurants .restaurant__container{
+  position: relative;
+  height: 475px;
+  width: 214px;
+}
+
+.featured__restaurants .restaurant__container h1{
+  font-size: 18px;
+}
+
+.featured__restaurants .preview{
+  width: 400px;
+}
+
+/* NEAR RESTAURANT */
+.restaurants{
+  width: 1320px;
+  padding: 60px 0;
+  margin: 0 auto;
+}
+
+.restaurants header{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.restaurants__form .form__search{
+  position: relative;
+}
+
+.restaurants__form .form__search img{
+  position: absolute;
+  top: 20px;
+  left: 24px;
+  width: 24px;
+  height: 24px;
+}
+
+.restaurants__form .form-select {
+  font-family: 'poppinsmedium', sans-serif;
+  background-color: #F2F2F2;
+  outline: none;
+  border: none;
+  padding: 20px 20px 20px 54px;
+  width: 252px;
+  border-radius: 12px;
+}
+
+.restaurants .restaurant__container {
+  height: 415px;
+  position: relative;
+}
+
+.restaurants .restaurant__container .restaurant__detail{
+  width: 379px;
+}
+
+.restaurants .restaurant__container h1{
+  font-size: 18px;
+}
+
+.restaurants .row{
+  margin-bottom: 56px;
+}
+
+.restaurants .btn__wrapper{
+  text-align: center;
+}
+
+/* CHEFS LIST */
+.chef{
+  width: 1320px;
+  padding-top: 60px;
+  padding-bottom: 120px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 660px 596px;
+  gap: 64px;
+}
+
+.chef .chef__picture{
+  position: relative;
+  margin: 0 auto;
+}
+
+.chef .chef__picture img{
+  border-radius: 24px;
+}
+
+.chef .chef__experience{
+  width: 179px;
+  border-radius: 24px;
+  background-color: #FFFF;
+  position: absolute;
+  top: 40px;
+  left: 421px;
+  padding: 27px 46px;
+  text-align: center;
+  box-shadow: 8px 8px 25px rgba(102, 102, 102, 0.04);
+}
+
+.chef .chef__experience h2{
+  font-family: 'poppinssemibold', sans-serif;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.chef .chef__experience p{
+  color: #656565;
+  margin: 0;
+}
+
+.chef .chef__experience figure{
+  background-color: rgba(253, 200, 134, 0.15);
+  margin-bottom: 12px;
+  padding: 15px;
+  border-radius: 999px;
+}
+
+.chef .header{
+  margin-bottom: 32px;
+}
+
+.chef .header h2{
+  font-size: 18px;
+}
+
+.chef .header h1{
+  font-size: 32px;
+}
+
+.chef .chef__restaurant{
+  width: 330px;
+  border-radius: 24px;
+  background-color: #FFFF;
+  position: absolute;
+  bottom: 40px;
+  left: -60px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: -8px 8px 25px rgba(102, 102, 102, 0.04);
+}
+
+.chef .chef__restaurant .place__image{
+  height: 132px;
+  border-radius: 12px;
+}
+
+.chef .chef__restaurant .chef__detail p{
+  color: #656565;
+  margin-bottom: 4px;
+}
+
+.chef .chef__restaurant .chef__detail h3{
+  font-family: 'poppinssemibold', sans-serif;
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.chef .btn__profile{
+  border: none;
+  outline: none;
+  height: fit-content;
+  background: none;
+  padding-left: 0;
+  font-family: 'poppinssemibold', sans-serif;
+  color: #FDC886;
+  display: none;
+}
+
+.chef .active .btn__profile{
+  display: block;
+}
+
+.chef .restaurant__detail .btn__profile{
+  font-family: 'poppinsmedium', sans-serif;
+}
+
+.chef .btn__profile img{
+  filter: invert(85%) sepia(6%) saturate(5136%) hue-rotate(315deg) brightness(119%) contrast(98%);;
+}
+
+.chef .chef__list .restaurant__detail{
+  position: static;
+  width: 100%;
+  background: none;
+  transition: 0.15s;
+}
+
+.chef .chef__list .active{
+  background-color: #FFFF;
+}
+
+.chef .chef__list .restaurant__detail:hover{
+  background-color: #FFFF;
+}
+
+.chef .chef__list .food{
+  margin-bottom: 6px;
+  font-family: 'poppinsmedium', sans-serif;
+  color: #656565;
+}
+
+.chef .chef__list .list{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 62px;
+}
+
+.chef .chef__list .view-chef{
+  width: 186px;
+}
